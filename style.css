@@ -1,0 +1,111 @@
+body {
+    display: flex;
+   justify-content: center;
+    background-color: black;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+#picture-logo {
+    /* background-image: url('adrian-swancar-pIr-PH5IXF8-unsplash.jpg'); */
+    background-image: url('/home/jorian/Downloads/adrian-swancar-pIr-PH5IXF8-unsplash.jpg');
+    background-size: auto;
+    width: 600px;
+    height: 800px;
+    background-position: center;
+
+}
+
+#content-container {
+    
+}
+
+#text-container {
+    background-color: #ebebeb;
+    height: 300px;
+    width: 690px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    
+}
+
+p {
+    width: 400px;
+    font-weight: bolder;
+    
+    font-size: 18px;
+    line-height: 28px;
+    padding-left: 40px;
+}
+
+
+
+#form-container {
+    width: 690px;
+    height: 260px;
+    background-color: aliceblue; 
+    box-shadow: 0px -1px 9px #93a1a3
+}
+form {
+   padding-top: 40px;
+   padding-bottom: 40px;
+   padding-left: 40px;
+    display: grid;
+    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 4em 4em 4em 4em;
+    width: 690px;
+
+   
+
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    
+    
+}
+#button-link-container {
+    height: 240px;
+    width: 650px;
+    background-color: rgb(255, 246, 246);
+    padding-left: 40px;
+     box-shadow: 0px -1px 9px #93a1a3
+   
+}
+
+
+
+#button-container {
+    padding-top: 40px;
+
+}
+
+#account-link-container {
+    padding-top: 20px;
+    padding-left: 5px;
+
+}
+
+button {
+    width: 300px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #db838a;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+a {
+   text-decoration: underline; 
+}
+
+
+
+
