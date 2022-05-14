@@ -2,10 +2,12 @@ body {
     display: flex;
    justify-content: center;
     background-color: black;
+    
 }
 #container {
     display: flex;
     flex-direction: row;
+    
 }
 
 #picture-logo {
@@ -24,7 +26,7 @@ body {
 
 #text-container {
     background-color: #ebebeb;
-    height: 300px;
+    height: 280px;
     width: 690px;
     display: flex;
     flex-direction: column;
@@ -34,11 +36,12 @@ body {
 }
 
 p {
-    width: 400px;
+    width: 500px;
     font-weight: bolder;
     
     font-size: 18px;
     line-height: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 40px;
 }
 
@@ -46,9 +49,17 @@ p {
 
 #form-container {
     width: 690px;
-    height: 260px;
+    height: 290px;
     background-color: aliceblue; 
-    box-shadow: 0px -1px 9px #93a1a3
+    box-shadow: 0px -1px 9px #93a1a3;
+    padding-top: 10px
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 form {
    padding-top: 40px;
@@ -68,11 +79,12 @@ form > div {
     display: flex;
     flex-direction: column;
     width: 200px;
+    font-family: 'Courier New', Courier, monospace;
     
     
 }
 #button-link-container {
-    height: 240px;
+    height: 220px;
     width: 650px;
     background-color: rgb(255, 246, 246);
     padding-left: 40px;
@@ -105,7 +117,9 @@ button {
 a {
    text-decoration: underline; 
 }
-
+a, span {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 
 
