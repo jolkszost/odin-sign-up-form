@@ -20,8 +20,18 @@ body {
 
 }
 
-#content-container {
-    
+#logo {
+    height: 80px;
+    font-size: 45px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    background-image: linear-gradient(to bottom, #b64b4748, rgb(110, 0, 0));
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #text-container {
@@ -41,17 +51,19 @@ p {
     
     font-size: 18px;
     line-height: 28px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding-left: 40px;
 }
 
-
+form {
+    height: 500px;
+}
 
 #form-container {
     width: 690px;
     height: 290px;
     background-color: aliceblue; 
-    box-shadow: 0px -1px 9px #93a1a3;
+   
     padding-top: 10px
 }
 
@@ -61,18 +73,28 @@ h1 {
     padding-left: 40px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-form {
+#form-inputs {
    padding-top: 40px;
-   padding-bottom: 40px;
+   
    padding-left: 40px;
     display: grid;
     
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 4em 4em 4em 4em;
+    grid-template-columns: 250px 200px;
+    grid-template-rows: 4em 4em 4em;
     width: 690px;
 
    
 
+}
+#button-container {
+    width: 650px;
+   height: 200px;
+    background-color: rgb(255, 246, 246);
+    /* padding: 40px; */
+     box-shadow: 0px 4px 8px #93a1a3 inset;
+     padding-top: 40px;
+     padding-left: 40px;
+   
 }
 
 form > div {
@@ -82,36 +104,80 @@ form > div {
     font-family: 'Courier New', Courier, monospace;
     
     
+    
 }
+
+input {
+    -webkit-appearance: none;
+    border-radius: 5px;
+    width: 200px;
+  border: 1px solid #333;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 90%;
+
+  box-sizing: border-box;
+}
+
+label {
+    padding-left: 5px;
+}
+
+input:focus {
+    border: 2px solid blue;
+}
+
+input.invalid{
+    border-color: #900;
+    background-color: #FDD;
+  }
+
+
+.error {
+    width  : 100%;
+    padding: 0;
+    
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+  }
+
+.error.active {
+  padding: 0.3em;
+}
+
 #button-link-container {
     height: 220px;
-    width: 650px;
+    width: 610px;
     background-color: rgb(255, 246, 246);
     padding-left: 40px;
-     box-shadow: 0px -1px 9px #93a1a3
+     box-shadow: 0px -2px 4px #93a1a3
    
 }
 
 
 
-#button-container {
-    padding-top: 40px;
 
-}
 
 #account-link-container {
     padding-top: 20px;
     padding-left: 5px;
-
+    background-color: rgb(255, 246, 246);
 }
 
 button {
     width: 300px;
     height: 50px;
     border-radius: 8px;
-    background-color: #db838a;
-    font-size: 18px;
+    background-color: #760808;
+    font-size: 23px;
     font-weight: bolder;
+    letter-spacing: 1px;
+    color: whitesmoke;
 }
 
 a {

@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+   
     <title>Odin Sign Up Form</title>
 </head>
 <body>
@@ -13,7 +11,7 @@
 <div id="container">
     <div id="picture-logo">
         <!-- <img src=" /home/jorian/Downloads/adrian-swancar-pIr-PH5IXF8-unsplash.jpg" alt=""> -->
-    <div id="logo"></div>
+    <div id="logo">BLOOD MOON FEAST INC</div>
     </div>
     <div id="content-container">
         <div id="text-container">
@@ -22,45 +20,54 @@
         </div>
         <div id="form-container">
             <h1>Enter your info!</h1>
-            <form action="">
+            <form>
+               <div id="form-inputs">
                 <div id="personFirst">
                     <label for="firstName">FIRST NAME</label>
-                    <input type="text" name="firstName" id="firstName">
+                    <input type="text" name="firstName" id="firstName" required>
+                    <span class="error" aria-live="polite"></span>
                 </div>
                 <div id="personLast">
                     <label for="lastName">LAST NAME</label>
-                    <input type="text" name="lastName" id="lastName">
+                    <input type="text" name="lastName" id="lastName" required>
+                    <span class="error" aria-live="polite"></span>
                 </div>
                 <div id="personEmail">
                     <label for="email">EMAIL ADDRESS</label>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
+                    <span class="error" aria-live="polite"></span>
                 </div>
                 <div id="phoneNumber">
                     <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="phone" id="phone">
+                    <input type="tel" name="phone" id="phone" required>
+                    <span class="error" aria-live="polite"></span>
                 </div>
                 <div id="password1">
                     <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" required>
+                <span class="error" aria-live="polite"></span>
                 </div>
                 <div id="password2">
                     <label for="confirmPassword">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirmPassword" id="confirmPassword">
+                    <input type="password" name="confirmPassword" id="confirmPassword" required>
+                    <span class="error" aria-live="polite"></span>
                 </div>
-                
-                
-            </form>
-        </div>
-        <div id="button-link-container">
+              </div>
             <div id="button-container">
             <button type="submit">Create Account</button>
-            </div>
-            <div id="account-link-container">
+              <div id="account-link-container">
             <span>Already Drinking Alien Blood, etc? <a link='drinkalienblood.com'>Log In</a></span>
 
             </div>
+            </div>
+                
+            </form>
+        </div>
+        
+          
         </div>
     </div>
 </div>    
 </body>
+ <script src="script.js" defer></script>
 </html>
